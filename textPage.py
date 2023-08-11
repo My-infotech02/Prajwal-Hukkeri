@@ -31,7 +31,7 @@ def getSentiments(userText, type):
     if(type == 'Positive/Negative/Neutral - TextBlob'):
         polarity, subjectivity, status = getPolarity(userText)
         if(status=="Positive"):
-            image = Image.open('./images/positive.PNG')
+            image = Image.open('Prajwal-Hukkeri/images/positive.PNG')
         elif(status == "Negative"):
             image = Image.open('./images/negative.PNG')
         else:
