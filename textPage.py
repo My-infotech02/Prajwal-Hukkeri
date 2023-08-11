@@ -31,11 +31,11 @@ def getSentiments(userText, type):
     if(type == 'Positive/Negative/Neutral - TextBlob'):
         polarity, subjectivity, status = getPolarity(userText)
         if(status=="Positive"):
-            image = Image.open('./images/positive.PNG')
+            image = Image.open('positive.PNG')
         elif(status == "Negative"):
-            image = Image.open('./images/negative.PNG')
+            image = Image.open('negative.PNG')
         else:
-            image = Image.open('./images/neutral.PNG')
+            image = Image.open('neutral.PNG')
         col1, col2, col3 = st.columns(3)
         col1.metric("Polarity", polarity, None)
         col2.metric("Subjectivity", subjectivity, None)
