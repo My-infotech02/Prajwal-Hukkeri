@@ -66,13 +66,13 @@ def renderPage():
      ('Positive/Negative/Neutral - TextBlob', 'Happy/Sad/Angry/Fear/Surprise - text2emotion'))
     st.text("")
     if st.button('Predict'):
-        if(userText!="" and type!=None):
+        if(userText!="" and type=='Positive/Negative/Neutral - TextBlob'):
             st.text("")
             st.components.v1.html("""
                                 <h3 style="color: #0284c7; font-family: Source Sans Pro, sans-serif; font-size: 28px; margin-bottom: 10px; margin-top: 50px;">Result</h3>
                                 """, height=100)
             getSentiments(userText, type)
-        elif(userText!="" and type!=None):
+        elif(userText!="" and type=='Happy/Sad/Angry/Fear/Surprise - text2emotion'):
             st.text("")
             st.components.v1.html("""
                                 <h3 style="color: #0284c7; font-family: Source Sans Pro, sans-serif; font-size: 28px; margin-bottom: 10px; margin-top: 50px;">Result</h3>
