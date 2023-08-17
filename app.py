@@ -18,7 +18,7 @@ elif page=="IMDb movie reviews":
     imdbReviewsPage.renderPage()
 elif page=="Image":
     imagePage.renderPage()
-# elif page=="Video":
+#elif page=="Video":
 #     videoPage.main()
 #elif page=="Twitter Data":
-     twitterAnalysisPage.renderPage()
+#     twitterAnalysisPage.renderPage()
