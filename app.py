@@ -16,7 +16,7 @@ if page=="Text":
     textPage.renderPage()
 # elif page=="Audio":
 #     audioPage.renderPage()
-elif :
+elif page="Twitter":
         st.title("Twitter Sentiment Analysis")
         components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
 
