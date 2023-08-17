@@ -2,7 +2,7 @@ import streamlit as st
 import sidebar
 import textPage
 # import audioPage
-import imdbReviewsPage
+import main
 import imagePage
 # import videoPage
 #import twitterAnalysisPage
