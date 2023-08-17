@@ -23,8 +23,7 @@ elif page=="Image":
 
 else:
         st.title("Twitter Sentiment Analysis")
-        components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
-
+        
 # Upload a CSV file containing the Twitter data
         uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
