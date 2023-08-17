@@ -12,18 +12,6 @@ import pandas as pd
 
 
 
-getEmoji = {
-    "happy" : "😊",
-    "neutral" : "😐",
-    "sad" : "😔",
-    "disgust" : "🤢",
-    "surprise" : "😲",
-    "fear" : "😨",
-    "angry" : "😡",
-    "positive": "🙂",
-    "neutral": "😐",
-    "negative": "☹️",
-}
 
 
 # Streamlit App
