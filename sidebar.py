@@ -12,7 +12,7 @@ def show():
             # options = ["Text", "IMDb movie reviews", "Image", "Audio", "Video", "Twitter Data", "Web Scraping"], #required
             # icons = ["card-text", "film", "image", "mic", "camera-video", "twitter", "globe"], #optional
             
-            options = ["Text", "IMDb movie reviews", "Image"], #required
+            options = ["Text", "Twitter Analysis", "Image"], #required
             icons = ["card-text", "film", "image"], #optional
             
             # menu_icon="cast", #optional
