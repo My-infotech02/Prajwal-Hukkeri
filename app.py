@@ -22,9 +22,11 @@ elif page=="Image":
     imagePage.renderPage()
 
 else:
-        st.title("Twitter Sentiment Analysis")
+        st.title("Twitter Sentiment Analysis😊😐😕😡")
         
 # Upload a CSV file containing the Twitter data
+        
+    
         uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
         if uploaded_file is not None:
