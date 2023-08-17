@@ -1,6 +1,7 @@
 import streamlit as st
 import sidebar
 import textPage
+import streamlit.components.v1 as components
 # import audioPage
 import pandas as pd
 from textblob import TextBlob
@@ -26,7 +27,7 @@ else:
         
 # Upload a CSV file containing the Twitter data
         
-    
+        components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
         uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
         if uploaded_file is not None:
