@@ -5,7 +5,7 @@ import textPage
 import imdbReviewsPage
 import imagePage
 # import videoPage
-# import twitterAnalysisPage
+import twitterAnalysisPage
 
 # st.title("Hello")
 page = sidebar.show()
@@ -20,5 +20,5 @@ elif page=="Image":
     imagePage.renderPage()
 # elif page=="Video":
 #     videoPage.main()
-# elif page=="Twitter Data":
-#     twitterAnalysisPage.renderPage()
+elif page=="Twitter Data":
+     twitterAnalysisPage.renderPage()
