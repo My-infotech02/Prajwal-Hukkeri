@@ -13,7 +13,7 @@ def show():
             # icons = ["card-text", "film", "image", "mic", "camera-video", "twitter", "globe"], #optional
             
             options = ["Text", "Twitter ", "Image"], #required
-            icons = ["card-text", "film", "image"], #optional
+            icons = ["card-text", "twitter", "image"], #optional
             
             # menu_icon="cast", #optional
             default_index = 0, #optional
