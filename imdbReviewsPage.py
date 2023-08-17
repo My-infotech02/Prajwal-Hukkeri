@@ -50,19 +50,6 @@ if uploaded_file is not None:
     st.write("Uploaded Dataset with Sentiment Analysis:")
     st.write(data)
 
-def plotPie(labels, values):
-    fig = go.Figure(
-        go.Pie(
-        labels = labels,
-        values = [value*100 for value in values],
-        hoverinfo = "label+percent",
-        textinfo = "value"
-    ))
-    st.plotly_chart(fig, use_container_width=True)
-
-lastSearched = ""
-cacheData = {}
-        
 
 
 
@@ -70,45 +57,3 @@ cacheData = {}
     
                     
                 
-
-def applyModal(movie, packageName):
-    if(packageName == "Flair"):
-        predictionList = [modals.flair(review) for review in movie["reviews"]]
-        valueCounts = dict(pd.Series(predictionList).value_counts())
-        print(valueCounts)
-        return valueCounts
-    elif(packageName == "TextBlob"):
-        predictionList = [modals.textBlob(review) for review in movie["reviews"]]
-        valueCounts = dict(pd.Series(predictionList).value_counts())
-        print(valueCounts)
-        return valueCounts
-    elif(packageName == "Vader"):
-        predictionList = [modals.vader(review) for review in movie["reviews"]]
-        valueCounts = dict(pd.Series(predictionList).value_counts())
-        print(valueCounts)
-        return valueCounts
-    elif(packageName == "Text2emotion"):
-        predictionList = [modals.text2emotion(review) for review in movie["reviews"]]
-        valueCounts = dict(pd.Series(predictionList).value_counts())
-        print(valueCounts)
-        return valueCounts
-    else:
-        return ""
-    
-
-def renderPage():
-    st.title("Sentiment Analysis 😊😐😕😡")
-    components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
-    # st.markdown("### User Input Text Analysis")
-    st.subheader("IMDb movie review analysis")
-    st.text("Analyze movie reviews from IMDb API for sentiments.")
-    st.text("")
-    movieName = st.text_input('Movie Name', placeholder='Input name HERE')
-    packageName = st.selectbox(
-     'Select Package',
-     ('Flair', 'Vader', 'TextBlob', 'Text2emotion'))
-    if st.button('Search'):
-        if movieName:
-            process(movieName, packageName)
-        else:
-            st.warning("Please enter a movie name")
