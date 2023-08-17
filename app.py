@@ -16,7 +16,12 @@ if page=="Text":
     textPage.renderPage()
 # elif page=="Audio":
 #     audioPage.renderPage()
-elif page=="Twitter":
+
+    
+elif page=="Image":
+    imagePage.renderPage()
+
+else:
         st.title("Twitter Sentiment Analysis")
         components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
 
@@ -40,10 +45,3 @@ elif page=="Twitter":
     # Display the uploaded dataset with sentiment analysis
             st.write("Uploaded Dataset with Sentiment Analysis:")
             st.write(data)
-    
-elif page=="Image":
-    imagePage.renderPage()
-# elif page=="Video":
-#     videoPage.main()
-#elif page=="Twitter Data":
- #    twitterAnalysisPage.renderPage()
