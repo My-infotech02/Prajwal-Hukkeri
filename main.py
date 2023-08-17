@@ -1,6 +1,13 @@
 import streamlit as st
-import pandas as pd
+import streamlit.components.v1 as components
 from textblob import TextBlob
+from PIL import Image
+import text2emotion as te
+import plotly.graph_objects as go
+import requests
+import json
+import modals
+import pandas as pd
 
 # Streamlit App
 st.title("Twitter Sentiment Analysis")
@@ -30,8 +37,8 @@ def renderPage():
     st.title("Sentiment Analysis 😊😐😕😡")
     components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
     # st.markdown("### User Input Text Analysis")
-    st.subheader("Image Analysis")
-    st.text("Input an image and let's find sentiments in there.")
+    st.subheader("Twitter Analysis")
+    st.text("Input ")
     st.text("")
     option = st.selectbox(
      'How would you like to provide an image ?',
