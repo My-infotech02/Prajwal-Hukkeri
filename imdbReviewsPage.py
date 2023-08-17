@@ -37,6 +37,19 @@ if uploaded_file is not None:
     # Display the uploaded dataset with sentiment analysis
     st.write("Uploaded Dataset with Sentiment Analysis:")
     st.write(data)
+def renderPage():
+    st.title("Sentiment Analysis 😊😐😕😡")
+    components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
+    # st.markdown("### User Input Text Analysis")
+    st.subheader("Image Analysis")
+    st.text("Input an image and let's find sentiments in there.")
+    st.text("")
+    option = st.selectbox(
+     'How would you like to provide an image ?',
+     ('Upload One',))
+    
+    if option=="Upload One":
+        uploadFile()
 
 
 
