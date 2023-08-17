@@ -1,7 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 from textblob import TextBlob
-from PIL import Image
 import text2emotion as te
 import plotly.graph_objects as go
 import requests
